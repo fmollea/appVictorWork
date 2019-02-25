@@ -26,13 +26,14 @@
         <ListView.GroupHeaderTemplate>
             <DataTemplate>
                 <ViewCell
-                    Height="20">
+                    Height="25">
                     <StackLayout
                         VerticalOptions="FillAndExpand"
                         Padding="5"
                         BackgroundColor="White">
                         <Label
                             Text="{Binding Key}"
+                            TextColor="{StaticResource titleTabColor}"
                             Style="{DynamicResource lbPoppinsBlack}"/>
                     </StackLayout>
                 </ViewCell>

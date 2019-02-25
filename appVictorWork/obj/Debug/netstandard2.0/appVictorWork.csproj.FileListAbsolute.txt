@@ -19,3 +19,4 @@
 /Users/fmollea/projects/appVictorWork/appVictorWork/obj/Debug/netstandard2.0/appVictorWork.pdb
 /Users/fmollea/projects/appVictorWork/appVictorWork/obj/Debug/netstandard2.0/appVictorWork.csprojAssemblyReference.cache
 /Users/fmollea/projects/appVictorWork/appVictorWork/obj/Debug/netstandard2.0/View/MenuMain.xaml.g.cs
+/Users/fmollea/projects/appVictorWork/appVictorWork/obj/Debug/netstandard2.0/View/textbutton1.xaml.g.cs

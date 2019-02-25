@@ -7,6 +7,7 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
+using appVictorWork.Helpers;
 using appVictorWork.Model;
 using appVictorWork.View;
 using Newtonsoft.Json;
@@ -40,8 +41,8 @@ namespace appVictorWork.ViewModel
             }
         }
 
-        private ObservableCollection<MyModel> _myList { get; set; }
-        public ObservableCollection<MyModel> myList 
+        private ObservableCollection<Grouping<string, MyModel>> _myList { get; set; }
+        public ObservableCollection<Grouping<string, MyModel>> myList 
         {
             get { return _myList; }
             set
@@ -52,6 +53,7 @@ namespace appVictorWork.ViewModel
         }
 
         private IList<MyModel> listAux { get; set; }
+        private IList<Grouping<string, MyModel>> listAux2 { get; set; }
 
         private bool _isRefreshing;
         public bool IsRefreshing
@@ -94,8 +96,9 @@ namespace appVictorWork.ViewModel
         private void InitView()
         {
             TitlePage = "OTOTOTOTO";
-            myList = new ObservableCollection<MyModel>();
+            myList = new ObservableCollection<Grouping<string, MyModel>>();
             listAux = new List<MyModel>();
+            listAux2 = new List<Grouping<string, MyModel>>();
             LoadList();
         }
 
@@ -120,12 +123,14 @@ namespace appVictorWork.ViewModel
                 var json = reader.ReadToEnd();
 
                 listAux = JsonConvert.DeserializeObject<List<MyModel>>(json);
-                myList = new ObservableCollection<MyModel>(listAux);
+
             }
 
             Search();
             IsRefreshing = false;
         }
+
+       
 
         private void Search()
         {
@@ -133,16 +138,38 @@ namespace appVictorWork.ViewModel
 
             if (string.IsNullOrEmpty(Filter))
             {
-                myList = new ObservableCollection<MyModel>(listAux.OrderBy(item => item.firstLine));
+                var sorted =
+                from f in listAux
+                orderby f.firstLine
+                group f by f.firstLine[0].ToString()
+                into theGroup
+                select
+                new Grouping<string, MyModel>
+                (theGroup.Key, theGroup);
+
+                myList = new
+                ObservableCollection
+                <Grouping<string, MyModel>>(sorted);
             }
             else
             {
-                myList = new ObservableCollection<MyModel>(listAux
-                    .Where(item => item.firstLine.ToLower().Contains(Filter.ToLower()))
-                    .OrderBy(item => item.firstLine));
+                var sorted =
+                from f in listAux
+                where f.firstLine.ToLower().Contains(Filter.ToLower())
+                orderby f.firstLine
+                group f by f.firstLine[0].ToString()
+                into theGroup
+                select
+                new Grouping<string, MyModel>
+                (theGroup.Key, theGroup);
+
+                myList = new
+                    ObservableCollection
+                    <Grouping<string, MyModel>>(sorted);
             }
 
             IsRefreshing = false;
+
         }
 
         private async Task Button1Cmd()
