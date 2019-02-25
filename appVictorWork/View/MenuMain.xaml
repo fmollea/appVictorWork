@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<popup:PopupPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+    x:Class="appVictorWork.View.MenuMain"
+    CloseWhenBackgroundIsClicked="true">
+    
+   <StackLayout VerticalOptions="Start" Padding="20" HorizontalOptions="End" BackgroundColor="White" >
+        <Label Style="{DynamicResource lbPoppinsRegular}"
+               Text="Texto menu principal 1"
+               HorizontalOptions="Start"/>
+        <Label Style="{DynamicResource lbPoppinsRegular}"
+           Text="Texto menu principal 2"
+           HorizontalOptions="Start"/>
+        <Label Style="{DynamicResource lbPoppinsRegular}"
+           Text="Texto menu principal 3"
+           HorizontalOptions="Start"/>
+        <Label Style="{DynamicResource lbPoppinsRegular}"
+           Text="Texto menu principal 4"
+           HorizontalOptions="Start"/>
+   </StackLayout>
+</popup:PopupPage>

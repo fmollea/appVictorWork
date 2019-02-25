@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{C7871327-F6F2-4184-9B0C-EE045A6B5C4D}|Default">
+  <MonoDevelop.Ide.ItemProperties.appVictorWork.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C475808F-F489-4DB2-AC5D-1D3A85066D4B" />
+  <MonoDevelop.Ide.ItemProperties.appVictorWork.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.3.2_QVGA_ADP2_API_28" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="appVictorWork/ViewModel/MainDetailTab1ViewModel.cs">
+    <Files>
+      <File FileName="appVictorWork/View/MainDetailTab1.xaml" Line="36" Column="29" />
+      <File FileName="appVictorWork/App.xaml" Line="17" Column="38" />
+      <File FileName="appVictorWork/ViewModel/MainDetailTab1ViewModel.cs" Line="22" Column="53" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

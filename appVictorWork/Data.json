@@ -1,0 +1,68 @@
+ [
+    {
+      "iD": "113230",
+      "firstLine": "Dev Android",
+      "secondaryText": "Segunda linea Texto 1",
+      "secondaryTextID": "998483482",
+      "secondaryText2": "Texto secundario 2 Texto 1",
+      "secondaryText2Description": "Descripción del texto secundario 2 Texto 1 el cual debería añadir puntos suspensivos",
+      "image1": "https://xcarmalavida.files.wordpress.com/2018/01/jose_antonio_alegre.jpg?w=202&h=202&crop=1",
+      "image2": "http://qapybara.com/998483482.png",
+      "flagCert": true
+    },
+    {
+      "iD": "113231",
+      "firstLine": "Ssr Frontend",
+      "secondaryText": "Segunda linea Texto 2 extenso el cual debería añadir puntos suspensivos",
+      "secondaryTextID": "99534343",
+      "secondaryText2": "Texto secundario 2 Texto 2",
+      "secondaryText2Description": "Descripción del texto secundario 2",
+      "image1": "https://xcarmalavida.files.wordpress.com/2018/01/uxio.jpg?w=202&h=202&crop=1",
+      "image2": "http://qapybara.com/99534343.png",
+      "flagCert": true
+    },
+    {
+      "iD": "113232",
+      "firstLine": "Este desarrollador trabaja fullstack en varias empresas como si fuese freelance",
+      "secondaryText": "Segunda linea Texto 3",
+      "secondaryTextID": "99534343",
+      "secondaryText2": "Texto secundario 2 Texto 2",
+      "secondaryText2Description": "Descripción del texto secundario 2",
+      "image1": "http://qapybara.com/113232.png",
+      "image2": "https://www.maxcf.es/wp-content/uploads/2018/07/disenar-logos-icono-1.jpg",
+      "flagCert": true
+    },
+    {
+      "iD": "113233",
+      "firstLine": "Dev FullStack",
+      "secondaryText": "Segunda linea Texto 3",
+      "secondaryTextID": "0",
+      "secondaryText2": "Texto secundario 2 Texto 3",
+      "secondaryText2Description": "Desc txt sec 2 Txt 3",
+      "image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmvTjtP-0CGpjGvwoi4yqEJkMzq5rocDiR2PZYhbe5twpJ_vQ_",
+      "image2": "http://qapybara.com/0.png",
+      "flagCert": false
+    },
+  {
+    "iD": "113234",
+    "firstLine": "Freelance Android",
+    "secondaryText": "Segunda linea Texto 4",
+    "secondaryTextID": "0",
+    "secondaryText2": "Texto secundario 2 Texto 3",
+    "secondaryText2Description": "Desc txt sec 2 Txt 3",
+    "image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoKBHZxRJ4HmTYJHm2bHtvJgSfrlRfpYha9jFCCHF1a2xjBbUO",
+    "image2": "https://kdm.com.co/img/uploads/ssasasas-461x293.jpg",
+    "flagCert": false
+  },
+  {
+    "iD": "113235",
+    "firstLine": "Dev Xamarin, Android, and others stacks",
+    "secondaryText": "Segunda linea Texto 5",
+    "secondaryTextID": "0",
+    "secondaryText2": "Texto secundario 2 Texto 3",
+    "secondaryText2Description": "Desc txt sec 2 Txt 3",
+    "image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyToTaI8ieenB_5_2W51yWTMHxzZbHDWqFsMHLeIV2GWG1eCp-",
+    "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQtTkzSGjXI4Q8Tyn3UUT1OqXwVR2kDDdBJQwzy290vbit0k0S",
+    "flagCert": false
+  }
+  ]
